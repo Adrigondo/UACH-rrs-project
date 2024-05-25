@@ -1,0 +1,55 @@
+Node tag: A
+Neighbors: 
+Node tag: B
+Neighbors: 
+Node tag: C
+Neighbors: 
+Node tag: D
+Neighbors: 
+Node tag: E
+Neighbors: 
+Node tag: F
+Neighbors: 
+Node tag: G
+Neighbors: 
+Node tag: H
+Neighbors: 
+Node tag: A
+Neighbors: E B C G 
+Node tag: B
+Neighbors: A E G 
+Node tag: C
+Neighbors: A E D 
+Node tag: D
+Neighbors: C G 
+Node tag: E
+Neighbors: A B C H 
+Node tag: F
+Neighbors: H 
+Node tag: G
+Neighbors: A B D 
+Node tag: H
+Neighbors: E F 
+|=========|==============================|==============================|
+| Current | Opened                       | Closed                       |
+|=========|==============================|==============================|
+| -       |[ F, ]                        |[ ]                           |
+| F       |[ H, ]                        |[ H, ]                        |
+| H       |[ E, ]                        |[ E, ]                        |
+| E       |[ A, B, C, ]                  |[ A, B, C, ]                  |
+| C       |[ A, B, D, ]                  |[ A, B, D, ]                  |
+| D       |[ A, B, ]                     |[ A, B, ]                     |
+====FOUND====
+|=========|==============================|==============================|
+| Current | Opened                       | Closed                       |
+|=========|==============================|==============================|
+| -       |[ F, ]                        |[ ]                           |
+| F       |[ H, ]                        |[ H, ]                        |
+| H       |[ E, ]                        |[ E, ]                        |
+| E       |[ A, B, C, ]                  |[ A, B, C, ]                  |
+| A       |[ B, C, G, ]                  |[ B, C, G, ]                  |
+| B       |[ C, G, ]                     |[ C, G, ]                     |
+| C       |[ G, D, ]                     |[ G, D, ]                     |
+| G       |[ D, ]                        |[ D, ]                        |
+| D       |[ ]                           |[ ]                           |
+====FOUND====
