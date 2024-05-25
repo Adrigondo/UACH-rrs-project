@@ -1,3 +1,84 @@
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag for the new node: Node added successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Nodes:
 Node tag: A
 Neighbors: 
 Node tag: B
@@ -14,6 +95,114 @@ Node tag: G
 Neighbors: 
 Node tag: H
 Neighbors: 
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of first node: Enter tag of second node: Nodes connected successfully.
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Nodes:
 Node tag: A
 Neighbors: E B C G 
 Node tag: B
@@ -30,26 +219,51 @@ Node tag: G
 Neighbors: A B D 
 Node tag: H
 Neighbors: E F 
-|=========|==============================|==============================|
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of start node: Enter tag of destination node: |=========|==============================|==============================|
 | Current | Opened                       | Closed                       |
 |=========|==============================|==============================|
 | -       |[ F, ]                        |[ ]                           |
-| F       |[ H, ]                        |[ H, ]                        |
-| H       |[ E, ]                        |[ E, ]                        |
-| E       |[ A, B, C, ]                  |[ A, B, C, ]                  |
-| C       |[ A, B, D, ]                  |[ A, B, D, ]                  |
-| D       |[ A, B, ]                     |[ A, B, ]                     |
+| F       |[ H, ]                        |[ F, ]                        |
+| H       |[ E, ]                        |[ F, H, ]                     |
+| E       |[ A, B, C, ]                  |[ F, H, E, ]                  |
+| C       |[ A, B, D, ]                  |[ F, H, E, C, ]               |
+| D       |[ A, B, ]                     |[ F, H, E, C, D, ]            |
 ====FOUND====
-|=========|==============================|==============================|
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Enter tag of start node: Enter tag of destination node: |=========|==============================|==============================|
 | Current | Opened                       | Closed                       |
 |=========|==============================|==============================|
 | -       |[ F, ]                        |[ ]                           |
-| F       |[ H, ]                        |[ H, ]                        |
-| H       |[ E, ]                        |[ E, ]                        |
-| E       |[ A, B, C, ]                  |[ A, B, C, ]                  |
-| A       |[ B, C, G, ]                  |[ B, C, G, ]                  |
-| B       |[ C, G, ]                     |[ C, G, ]                     |
-| C       |[ G, D, ]                     |[ G, D, ]                     |
-| G       |[ D, ]                        |[ D, ]                        |
-| D       |[ ]                           |[ ]                           |
+| F       |[ H, ]                        |[ F, ]                        |
+| H       |[ E, ]                        |[ F, H, ]                     |
+| E       |[ A, B, C, ]                  |[ F, H, E, ]                  |
+| A       |[ B, C, G, ]                  |[ F, H, E, A, ]               |
+| B       |[ C, G, ]                     |[ F, H, E, A, B, ]            |
+| C       |[ G, D, ]                     |[ F, H, E, A, B, C, ]         |
+| G       |[ D, ]                        |[ F, H, E, A, B, C, G, ]      |
+| D       |[ ]                           |[ F, H, E, A, B, C, G, D, ]   |
 ====FOUND====
+
+Menu:
+1. Add Node
+2. Connect Nodes
+3. Display Nodes with neighbors
+4. Depth First Search
+5. Breadth First Search
+6. Exit
+Enter your choice: Invalid choice. Please try again.

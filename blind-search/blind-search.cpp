@@ -21,10 +21,10 @@ struct Node
     static void addNode(list<Node *> &nodes)
     {
         Node *newNode = new Node;
-        // cout << "Enter tag for the new node: ";
+        cout << "Enter tag for the new node: ";
         cin >> newNode->tag;
         nodes.push_back(newNode);
-        // cout << "Node added successfully." << "\n";
+        cout << "Node added successfully." << "\n";
     }
 
     static Node *findByTag(list<Node *> &nodes, string tag)
@@ -40,34 +40,33 @@ struct Node
     static void connectNodes(list<Node *> &nodes)
     {
         string tag1, tag2;
-        // cout << "Enter tag of first node: ";
+        cout << "Enter tag of first node: ";
         cin >> tag1;
-        // cout << "Enter tag of second node: ";
+        cout << "Enter tag of second node: ";
         cin >> tag2;
 
         Node *node1 = findByTag(nodes, tag1);
         Node *node2 = findByTag(nodes, tag2);
 
-        // Connect nodes if found
         if (node1 && node2)
         {
             node1->neighbors.push_back(node2);
             node2->neighbors.push_back(node1);
-            // cout << "Nodes connected successfully." << "\n";
+            cout << "Nodes connected successfully." << "\n";
         }
         else if (node1 == NULL)
         {
-            // cout << "Node " << tag1 << " does not exists." << "\n";
+            cout << "Node " << tag1 << " does not exists." << "\n";
         }
         else if (node2 == NULL)
         {
-            // cout << "Node " << tag2 << " does not exists." << "\n";
+            cout << "Node " << tag2 << " does not exists." << "\n";
         }
     }
 
     static void displayNodesWithNeighbors(list<Node *> &nodes)
     {
-        // cout << "Nodes:" << "\n";
+        cout << "Nodes:" << "\n";
         for (list<Node *>::iterator node_it = nodes.begin(); node_it != nodes.end(); node_it++)
         {
             cout << "Node tag: " << (*node_it)->tag << "\n";
@@ -181,7 +180,7 @@ public:
                 cout << "| ";
                 printElement(current->tag, currentWidth);
                 printElement(Node::nodesToString(opened_nodes), listWidth);
-                printElement(Node::nodesToString(opened_nodes), listWidth);
+                printElement(Node::nodesToString(closed_nodes), listWidth);
                 cout << "\n";
                 cout << "====FOUND====\n";
                 return closed_nodes;
@@ -192,14 +191,14 @@ public:
             cout << "| ";
             printElement(current->tag, currentWidth);
             printElement(Node::nodesToString(opened_nodes), listWidth);
-            printElement(Node::nodesToString(opened_nodes), listWidth);
+            printElement(Node::nodesToString(closed_nodes), listWidth);
             cout << "\n";
         }
 
         cout << "| ";
         printElement(current->tag, currentWidth);
         printElement(Node::nodesToString(opened_nodes), listWidth);
-        printElement(Node::nodesToString(opened_nodes), listWidth);
+        printElement(Node::nodesToString(closed_nodes), listWidth);
         cout << "\n";
 
         return closed_nodes;
@@ -209,9 +208,9 @@ public:
     {
 
         string startTag, destTag;
-        // cout << "Enter tag of start node: ";
+        cout << "Enter tag of start node: ";
         cin >> startTag;
-        // cout << "Enter tag of destination node: ";
+        cout << "Enter tag of destination node: ";
         cin >> destTag;
 
         Node *start = Node::findByTag(graph, startTag);
@@ -224,11 +223,11 @@ public:
         }
         else if (start == NULL)
         {
-            // cout << "Node " << startTag << " does not exists." << "\n";
+            cout << "Node " << startTag << " does not exists." << "\n";
         }
         else if (dest == NULL)
         {
-            // cout << "Node " << destTag << " does not exists." << "\n";
+            cout << "Node " << destTag << " does not exists." << "\n";
         }
     }
 };
@@ -240,14 +239,14 @@ int main()
 
     do
     {
-        // cout << "\nMenu:" << "\n";
-        // cout << "1. Add Node" << "\n";
-        // cout << "2. Connect Nodes" << "\n";
-        // cout << "3. Display Nodes with neighbors" << "\n";
-        // cout << "4. Depth First Search" << endl;
-        // cout << "5. Breadth First Search" << endl;
-        // cout << "6. Exit" << "\n";
-        // cout << "Enter your choice: ";
+        cout << "\nMenu:" << "\n";
+        cout << "1. Add Node" << "\n";
+        cout << "2. Connect Nodes" << "\n";
+        cout << "3. Display Nodes with neighbors" << "\n";
+        cout << "4. Depth First Search" << endl;
+        cout << "5. Breadth First Search" << endl;
+        cout << "6. Exit" << "\n";
+        cout << "Enter your choice: ";
         cin >> choice;
 
         switch (choice)
@@ -272,7 +271,7 @@ int main()
             break;
         }
         default:
-            // cout << "Invalid choice. Please try again." << "\n";
+            cout << "Invalid choice. Please try again." << "\n";
             break;
         }
     } while (choice != '6');
