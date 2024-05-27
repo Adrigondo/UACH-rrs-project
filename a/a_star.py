@@ -90,9 +90,10 @@ def clean_open_from_duplicates(open):
             clean_open.append(tuple)
         else: # Si el nodo ya está metido en la lista, significa que debe de compararse con el otro para ver cuál tiene menor peso
             for i in range(len(clean_open)): 
-                for tuple_clean in clean_open:
-                    if tuple_clean[0] == tuple[0] and tuple[4] < tuple_clean[4]: # Si el costo del nodo es menor al del mismo nodo ya registrado, lo reemplaza
-                        clean_open[i] = tuple 
+                if clean_open[i][0].name == tuple[0].name:
+                    if tuple[4] < clean_open[i][4]: # Si el costo del nodo es menor al del mismo nodo ya registrado, lo reemplaza
+                        clean_open[i] = tuple
+                    break
 
     return clean_open
 

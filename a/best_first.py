@@ -77,13 +77,11 @@ def clean_open_from_duplicates(open):
             nodes_accounted_for.append(tuple[0])
             clean_open.append(tuple)
         else: # Si el nodo ya está metido en la lista, significa que debe de compararse con el otro para ver cuál tiene menor peso
-            print(tuple[0].name)
             for i in range(len(clean_open)): 
-                for tuple_clean in clean_open:
-                    if tuple_clean[0] == tuple[0] and tuple[2] < tuple_clean[2]: # Si el costo del nodo es menor al del mismo nodo ya registrado, lo reemplaza
-                        print("REPLACED:",tuple_clean[0].name,tuple[0].name)
+                if clean_open[i][0].name == tuple[0].name:
+                    if tuple[2] < clean_open[i][2]: # Si el costo del nodo es menor al del mismo nodo ya registrado, lo reemplaza
                         clean_open[i] = tuple 
-                        break
+                    break
 
     return clean_open
 
