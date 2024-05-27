@@ -25,9 +25,9 @@ def best_first(start_node, goal_node):
         for neighbor in current[0].neighbors:
             # Si el nodo no ha sido cerrado, se crea otra tupla y se añade a Abiertos
             if not node_is_in_closed(neighbor, closed):
-                new_tuple = (neighbor, current[0], straight_line_distance[neighbor.name, current[0].name])
+                new_tuple = (neighbor, current[0], straight_line_distance[neighbor.name, current[0].name]+current[2])
                 open.append(new_tuple)
-            open = clean_open_from_duplicates(open) # Se buscan los nodos duplicados dentro de Cerrados para dejar solo uno, el de menor costo
+            open = clean_open_from_duplicates(open) # Se buscan los nodos duplicados dentro de Abiertos para dejar solo uno, el de menor costo
         
         closed.append(current)
         print_step(current, open, closed)
@@ -77,10 +77,13 @@ def clean_open_from_duplicates(open):
             nodes_accounted_for.append(tuple[0])
             clean_open.append(tuple)
         else: # Si el nodo ya está metido en la lista, significa que debe de compararse con el otro para ver cuál tiene menor peso
+            print(tuple[0].name)
             for i in range(len(clean_open)): 
                 for tuple_clean in clean_open:
                     if tuple_clean[0] == tuple[0] and tuple[2] < tuple_clean[2]: # Si el costo del nodo es menor al del mismo nodo ya registrado, lo reemplaza
+                        print("REPLACED:",tuple_clean[0].name,tuple[0].name)
                         clean_open[i] = tuple 
+                        break
 
     return clean_open
 
